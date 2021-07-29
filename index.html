@@ -1,0 +1,35 @@
+<html>
+<head>
+
+	<title>AI Video Surveillance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body background="sky.jpg">
+<center>
+<h1 class="btn btn-info heading">AI OBJECT finder
+    <br>
+    The input name which you will give will have to match the names in Coco Model.Then only it will detect it.
+</h1>
+<button onclick="Start()" class="btn btn-success" id="Start">Start</button>
+<br>
+<h2 class="btn btn-danger" id="status"></h2>
+<h2 class="btn btn-warning" id="Name_obj"></h2>
+<h3 class="h3">Object Name:</h3>
+<input type="text"  class="form-control" placeholder="Enter name of object">
+</center>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
