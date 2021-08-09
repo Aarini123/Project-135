@@ -13,12 +13,12 @@ function setup(){
 function draw(){
     image(video,0,0,580,600);
     if(status!=""){
-        objectDetector.detect(gotResult);
+        objectDetector.detect(video,gotResult);
         nam=document.getElementById("input").value;
         for(i=0; i<objects.length; i++){
 if(nam==objects[i].label){
-            document.getElementById("Status").innerHTML="Status:" + "Objects Detected";
-            document.getElementById("Num_obj").innerHTML="Number of objects:" + "" + objects.length;
+            document.getElementById("status").innerHTML="Status:" + "Objects Detected";
+            document.getElementById("Name_obj").innerHTML="Number of objects:" + "" + objects.length;
          
             percent=floor(objects[i].confidence * 100);
             R=random(255);
